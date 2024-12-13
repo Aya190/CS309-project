@@ -26,6 +26,19 @@ const getUsurByEmail = async (req,res) => {
    }
 };
 
+const getUserById = async (req,res) => {
+ try {
+    const userid = await User.find();
+    res.json(id);
+    
+ } catch (error) {
+    res.status(500).json({ message: err.message });
+ }
+
+};
+
+
+
 const getAllUsers = async (req, res) => {
     try {
         const users = await User.find();
@@ -38,6 +51,7 @@ const getAllUsers = async (req, res) => {
 module.exports = {
     createUser, 
     getUsurByEmail,
+    getUserById ,
     getAllUsers
    
 };
