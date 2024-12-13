@@ -5,7 +5,9 @@ const createMenuProduct = async (req, res) => {
         name: req.body.name,
         description: req.body.description,
         price: req.body.price,
-        available: req.body.available
+        available: req.body.available,
+        imagUrl: req.body.imagUrl
+
     });
     try {
         const newMenuProduct = await menuProduct.save();
