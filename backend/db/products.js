@@ -1,4 +1,19 @@
-const Product = require('../models/Product');
+const Product = require('../db/models/product');
+
+const createProduct = async (req, res) => {
+    const product = new Product({
+        name: req.body.name,
+        price: req.body.price,
+        category: req.body.category,
+        imagUrl: req.body.imagUrl
+    });
+    try {
+        const newProduct = await product.save();
+        res.status(201).json(newProduct);
+    } catch (err) {
+        res.status(400).json({ message: err.message });
+    }
+};
 
 const getAllProducts = async (req, res) => {
     try {
@@ -9,22 +24,8 @@ const getAllProducts = async (req, res) => {
     }
 };
 
-const createProduct = async (req, res) => {
-    const product = new Product({
-        name: req.body.name,
-        price: req.body.price,
-        category: req.body.category,
-        inStock: req.body.inStock
-    });
-    try {
-        const newProduct = await product.save();
-        res.status(201).json(newProduct);
-    } catch (err) {
-        res.status(400).json({ message: err.message });
-    }
-};
-
 module.exports = {
-    getAllProducts,
-    createProduct
+    createProduct,
+    getAllProducts
+    
 };
