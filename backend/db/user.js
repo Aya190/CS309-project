@@ -6,7 +6,8 @@ const createUser = async (req, res) => {
         name: req.body.name,
         email: req.body.email,
         password: req.body.password,
-        imagUrl: req.body.imagUrl
+        imagUrl: req.body.imagUrl,
+        isAdmin: req.body.isAdmin
 
     });
     try {
