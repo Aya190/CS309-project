@@ -19,6 +19,6 @@ mongoose
 });
 
 
-app.use("/product", products);
+app.use("/products", products);
 app.use("/user" , user);
 app.use("/upload", upload);
