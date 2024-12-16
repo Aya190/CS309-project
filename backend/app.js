@@ -8,6 +8,9 @@ const { router: user } = require("./router/user/user");
 const { router: upload } = require("./router/upload/upload");
 const app = express();
 
+process.on("uncaughtException", (err) => console.log(err));
+app.use(express.json());
+app.use(cors());
 
 mongoose.set("strictQuery", false)
 mongoose
