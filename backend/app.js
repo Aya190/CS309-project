@@ -1,7 +1,6 @@
 const express = require("express");
 const mongoose = require('mongoose');
 const cors = require("cors");
-
 const products = require("./router/product/product");
 const cart = require("./router/cart/cart");
 const { router: user } = require("./router/user/user");
@@ -20,7 +19,7 @@ mongoose
     
     app.listen(3000, () => console.log('app started on port 3000'))
 }).catch((error) => {
-    console.log('cant connect to mongodb'+error)
+    console.log('cant connect to mongodb' + error)
 });
 
 
