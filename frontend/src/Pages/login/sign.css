@@ -1,0 +1,62 @@
+.signin,.Signup{
+    background-image:url(../../../public/logo.jpeg);
+    background-size:cover;
+  
+ 
+}
+.Login{
+    width: 400px;
+    height: 350px;
+    margin-top: 15%;
+    padding-top: 3%;
+}
+.signup{
+
+    width: 400px;;
+    height: 400px;
+    margin-top: 12%;
+    
+}
+form{
+  border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    display: block;
+    justify-items: center;
+   margin-left: 35%;
+   
+   padding:2%;
+   font-size: large;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   color:aliceblue;
+}
+a{
+    color:rgba(0, 0, 0, 1);
+}
+.links{
+display: block;
+    justify-items: center;
+    padding: 2px;
+}
+.link1{
+    margin-left: 37%;
+
+}
+input{
+border-radius: 20px;
+    width: 90%;
+padding: 3%;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.submit1{
+    width: 150px;
+   
+    padding: 5,5px;
+   
+}
+.submit2{
+    width: 150px;
+   margin-left: 28%;
+    padding: 5,5px;
+   
+}
