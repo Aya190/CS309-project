@@ -6,9 +6,8 @@ nav{
     position: fixed;
     display: flex;
  align-items: center;
-justify-content: space-between;
-padding-left: 10%;
-padding-right: 10%;
+justify-content: space-evenly;
+padding:0 5%;
 }
 .link{
 
