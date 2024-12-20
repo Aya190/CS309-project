@@ -13,33 +13,16 @@ const ItemList = () => {
       <div className="grid">
         {filteredItems.length > 0 ? (
           filteredItems.map((item) => (
-            <div
-              key={item.id}
-              style={{
-                border: '1px solid #ddd',
-                borderRadius: '8px',
-                padding: '15px',
-                textAlign: 'center',
-              }}
-            >
-              <Link to={`/item/${item.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  style={{
-                    width: '100%',
-                    height: '150px',
-                    objectFit: 'cover',
-                    borderRadius: '8px',
-                  }}
-                />
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
+            <div key={item.id} className="card">
+              <Link to={`/item/${item.id}`} className="link">
+                <img src={item.image} alt={item.title} className="image" />
+                <h3 className="title">{item.title}</h3>
+                <p className="description">{item.description}</p>
               </Link>
             </div>
           ))
         ) : (
-          <p>No items found</p>
+          <p className="no-items">No items found</p>
         )}
       </div>
     </div>
