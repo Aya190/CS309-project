@@ -32,7 +32,7 @@ router.get("/:id", async (req, res) => {
 router.post(
   "/create",
   userAdmin,
-  uploadHandler.single("productImg"),
+  uploadHandler.single('image'),
   async (req, res) => {
     const { name, price, desc } = req.body;
     if (!name || !price || !desc) {
