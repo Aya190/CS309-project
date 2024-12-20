@@ -1,4 +1,11 @@
-
+button {
+    background-color:  #8B4513; 
+    color : white;
+    padding: 15px 32px;
+    font-size: 16px;
+    display: block;
+    margin: 90px auto 0; 
+  }
 h1{
     margin-top: 13% ;
     margin-left: 25%;
