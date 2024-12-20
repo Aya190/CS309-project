@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require('mongoose');
 const cors = require("cors");
-const products = require("./router/product/product");
+const product  = require("./router/product/product");
 const cart = require("./router/cart/cart");
 const { router: user } = require("./router/user/user");
 const { router: upload } = require("./router/upload/upload");
@@ -23,7 +23,8 @@ mongoose
 });
 
 
-app.use("/products", products);
+
+app.use("/product", product);
 app.use("/user" , user);
 app.use("/cart", cart);
 app.use("/upload", upload);

@@ -6,7 +6,7 @@ const { uploadHandler } = require("../upload/upload");
 
 const router = express.Router();
 
-const JWT_SECERT = "adfcsfhkloiuytr";
+const JWT_SECERT = "aya";
 
 const getTokenFromHeaders = (req) => {
   const header = req.headers["authorization"];
@@ -102,6 +102,7 @@ router.post(
 
 router.post("/login", async (req, res) => {
   const { email, password } = req.body;
+
   if (!email || !password) {
     res.status(400).json({
       message: "invalid input",
