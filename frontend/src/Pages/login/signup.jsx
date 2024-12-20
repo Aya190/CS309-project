@@ -1,6 +1,6 @@
 
 import'./sign.css'
-const signup = () => {
+const Signup = () => {
 return(
     <body className="Signup">
     <form className="signup">
@@ -36,4 +36,4 @@ return(
 );
 }
 
-export default signup
+export default Signup;

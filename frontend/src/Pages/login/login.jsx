@@ -1,7 +1,7 @@
 
 import'./sign.css'
 
-const login = () => {
+const Login = () => {
   return (
 
     <body className="signin">
@@ -35,4 +35,4 @@ const login = () => {
   );
 }
 
-export default login;
+export default Login;

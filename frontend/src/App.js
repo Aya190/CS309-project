@@ -4,7 +4,7 @@ import ItemList from './Pages/ItemList';
 import ItemDetails from './Pages/ItemDetails';
 import Login from './Pages/login/login';
 import Signup from './Pages/login/signup';
-import Home from './Pages/home/Home';
+import Home from './Pages/home/home'
 function App() {
   return (
     <Router>
