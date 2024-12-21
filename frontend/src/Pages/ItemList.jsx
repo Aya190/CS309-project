@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './items.css';
-import SearchBar from './SearchBar';
-import { items } from './itemsData';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./items.css";
+import SearchBar from "./SearchBar";
+import { items } from "./itemsData";
 
+//import axios from 'axios';
 const ItemList = () => {
   const [filteredItems, setFilteredItems] = useState(items);
 
