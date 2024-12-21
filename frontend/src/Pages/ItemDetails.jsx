@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { items } from './itemsData'; 
-
+import AddToCart from '../component/AddToCart'
 const ItemDetails = () => {
   const { id } = useParams(); 
   const item = items.find((item) => item.id === parseInt(id)); 
@@ -36,7 +36,11 @@ const ItemDetails = () => {
         <p>
           <strong>Price:</strong> {item.price} EGP
         </p>
-     
+
+        <p>
+          <strong>rating:</strong> {item.rating} 
+        </p>
+        <AddToCart/>
       </div>
     </div>
   );
