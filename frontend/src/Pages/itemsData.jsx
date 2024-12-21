@@ -26,7 +26,7 @@ export const items = [
     description: "A burger made with grilled chicken, lettuce, tomatoes, and special sauce.",
     category: "Burgers",
     image: image2,
-    rating: { rate: 4.5, count: 150 },
+    rating: "⭐⭐⭐⭐☆",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ export const items = [
     description: "A mix of shrimp, calamari, and grilled fish served with rice.",
     category: "Main Dishes",
     image: image3,
-    rating: { rate: 4.9, count: 180 },
+    rating: "⭐⭐⭐⭐☆",
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ export const items = [
     description: "Penne pasta in creamy Alfredo sauce with Parmesan cheese and chicken.",
     category: "Pasta",
     image: image4,
-    rating: { rate: 4.7, count: 170 },
+    rating: "⭐⭐⭐⭐☆",
   },
   {
     id: 5,
@@ -80,7 +80,7 @@ export const items = [
     description: "Refreshing natural mango juice with no additives.",
     category: "Beverages",
     image: image8,
-    rating: { rate: 4.7, count: 130 },
+    rating: "⭐⭐⭐⭐☆",
   },
   {
     id: 9,
@@ -89,7 +89,7 @@ export const items = [
     description: "Grilled steak served with mashed potatoes and vegetables.",
     category: "Main Dishes",
     image: image9,
-    rating: { rate: 4.8, count: 190 },
+    rating: "⭐⭐⭐⭐☆",
   },
   {
     id: 10,
@@ -98,6 +98,6 @@ export const items = [
     description: "Warm waffle topped with chocolate sauce and bananas.",
     category: "Desserts",
     image: image10,
-    rating: { rate: 4.5, count: 100 },
+    rating:"⭐⭐⭐⭐☆" ,
   },
 ];
