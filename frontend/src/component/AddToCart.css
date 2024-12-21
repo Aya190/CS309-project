@@ -1,0 +1,15 @@
+
+ .add-to-cart-button {
+    background-color:green;
+    color:reb rgb(74, 7, 7);
+    border: none;
+    border-radius: 35px;
+    padding: 30px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: rgb(141, 110, 99);
+  }
