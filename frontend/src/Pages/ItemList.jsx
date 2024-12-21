@@ -1,11 +1,19 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './items.css';
-import SearchBar from './SearchBar';
-import { items } from './itemsData';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "./items.css";
+import SearchBar from "./SearchBar";
+import { items } from "./itemsData";
 
+import axios from "axios";
 const ItemList = () => {
   const [filteredItems, setFilteredItems] = useState(items);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3000/product/creat")
+      .then((response) => setFilteredItems(response.data))
+      .catch((error) => console.log(error));
+  }, []);
 
   return (
     <div className="items-container">

@@ -17,7 +17,7 @@ const createUser = async (req, res) => {
         res.status(400).json({ message: err.message });
     }
 };
-const getUsurByEmail = async (req,res) => {
+const getUserByEmail = async (req,res) => {
    try {
     const email = await User.find();
     res.json(email);
@@ -51,7 +51,7 @@ const getAllUsers = async (req, res) => {
 
 module.exports = {
     createUser, 
-    getUsurByEmail,
+    getUserByEmail,
     getUserById ,
     getAllUsers
    
