@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { items } from './itemsData'; 
+import React, { useState } from "react";
+import { useParams } from "react-router-dom";
+import { items } from "./itemsData";
 
 const ItemDetails = () => {
   const { id } = useParams();
@@ -36,7 +36,10 @@ const ItemDetails = () => {
         <p>
           <strong>Price:</strong> {item.price} EGP
         </p>
-     
+        <p>
+          <strong>rating:</strong> {item.rating}
+        </p>
+        <AddToCart />
       </div>
     </div>
   );
