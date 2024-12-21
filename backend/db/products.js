@@ -7,7 +7,6 @@ const createProduct = async (req, res) => {
         price: req.body.price,
         category: req.body.category,
         imagUrl: req.body.imagUrl,
-        desc: req.body.desc,
     });
     try {
         const newProduct = await product.save();
@@ -54,7 +53,6 @@ const updateProduct = async (req, res) => {
             {
                 name: req.body.name,
                 price: req.body.price,
-                desc: req.body.desc,
             },
             { new: true }
         );
